@@ -11,7 +11,7 @@ from sqlalchemy.orm import relationship
 from sqlalchemy_mixins import AllFeaturesMixin
 from starlette.middleware.base import RequestResponseEndpoint
 from starlette.requests import Request
-
+from flask import Flask, session
 from app.common.api_models import AssetCandle
 from app.common.enums import Asset, Currency, BetChoice, BetStatus, BetResult, WithdrawStatus, TimeFrame
 from app.common.utils import camel_to_snake, emit, amount_formatter
@@ -25,7 +25,14 @@ class Base(AllFeaturesMixin):
     def __tablename__(self):
         return camel_to_snake(self.__name__)
 
-
+class DbPool(Base):
+    id = Column(Integer, primary_key=True, unique=True, autoincrement=True)
+    network_id = Column(Integer)
+    amount = Column(Numeric)
+    user_address = Column(String)
+    currency = Column(Enum(Currency, create_constraint=False, native_enum=False))
+    created = Column(DateTime, default=datetime.utcnow)
+    paid = Column(DateTime, default=datetime.utcnow)
 class DBMiddleware(DBSessionMiddleware):
     async def dispatch(self, request: Request, call_next: RequestResponseEndpoint):
         # noinspection PyCallingNonCallable
@@ -35,11 +42,14 @@ class DBMiddleware(DBSessionMiddleware):
         return response
 
 
+
 class DbUser(Base):
     eth_balance = Column(Numeric, default=0)
     usdt_balance = Column(Numeric, default=0)
     address = Column(String)
-
+    eth_balance_fee = Column(Numeric, default=0)
+    usdt_balance_fee = Column(Numeric, default=0)
+    referral_point = Column(Numeric, default=0)
     network_id = Column(Integer)
     created = Column(DateTime, default=datetime.utcnow)
     activated = Column(DateTime, default=None)
@@ -56,6 +66,7 @@ class DbUser(Base):
         logger.debug(f'{event} emited')
         emit(f"{self.address}-{self.network_id}", event, data)
         emit("admins-room", event, data)
+
 
     @property
     def usdt_bets_count(self):

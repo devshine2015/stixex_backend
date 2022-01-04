@@ -2,17 +2,30 @@ from http import HTTPStatus
 import pendulum
 from fastapi import APIRouter, Depends, HTTPException
 from app.common.api_models import Bet, BetPage, BetEdit
-from app.common.db_models import DbBet, Base
+from app.common.db_models import DbBet, Base, DbReferral, DbPool, DbUser
 from app.common.dependencies import no_cache
 from app.common.enums import BetResult, Currency
 from app.common.utils import amount_formatter
 from app.model.api.table_data import TableData
+from datetime import timezone, datetime
 from app.model.api.user import User
 from app.model.api.win_loss import WinLoss
 from app.router.auth import get_current_active_user
 from dynaconf import settings
 from web3 import Web3, WebsocketProvider
 import json
+import threading
+import timeit
+from sqlalchemy.sql import func
+from flask import Flask, session
+from itertools import groupby
+from operator import itemgetter
+import time
+import atexit
+from datetime import timedelta
+from apscheduler.schedulers.background import BackgroundScheduler
+from web3 import Web3, WebsocketProvider
+from app.common.enums import Asset, TimeFrame, WithdrawStatus, SocketEvents
 
 bets_router = APIRouter()
 
@@ -34,14 +47,19 @@ def get_users_sum(currency, name, network_id):
 
 
 def get_bets_amount_sum_24(currency, network_id):
+
     dt = pendulum.now()
+    # dt = datetime.utcnow()
     dt_past_24 = dt.subtract(hours=24)
+    # dt_past_24 = datetime.utcnow() - timedelta(minutes=5)
+
     value = Base.session.execute(
         f"SELECT ROUND(CAST(coalesce(SUM(ABS(amount)), 0) AS numeric), 0) from db_bet WHERE "
         f"created>'{dt_past_24}' AND "
         f"created<'{dt}' AND "
         f"network_id={network_id} AND "
         f"currency = '{currency}';").scalar()
+    print(value,"value")
     return amount_formatter(value or 0)
 
 

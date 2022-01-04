@@ -9,21 +9,22 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 
 from app.common.db_models import DbBet, Base
-from app.common.enums import BetStatus, SocketEvents
+from app.common.enums import BetStatus, SocketEvents 
 from app.common.utils import get_history_by_asset
 from app.common.api_models import Bet, User
-
+print("================================")
 if settings.USE_SENTRY:
     sentry_sdk.init(dsn=settings.SENTRY_KEY,
                     traces_sample_rate=0.2)
 
 engine = create_engine(settings.DATABASE_URL)
 Session = scoped_session(sessionmaker(bind=engine))
-
+print("good checking-----------")
 while True:
     logger.info('Start cycle...')
     session = Session()
     Base.set_session(session)
+    print("checking-----------")
     for bet in DbBet.where(status=BetStatus.PROCESSING).all():
         try:
             if bet.interval_end <= datetime.utcnow():

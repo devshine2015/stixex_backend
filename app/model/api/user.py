@@ -3,6 +3,8 @@ from typing import Optional
 
 
 class User(BaseModel):
+    # class Config:
+    #     orm_mode = True
     username: str
     email: Optional[str] = None
     full_name: Optional[str] = None

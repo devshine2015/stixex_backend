@@ -1,0 +1,4 @@
+Collecting uvloop
+  Downloading uvloop-0.16.0-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (4.7 MB)
+Installing collected packages: uvloop
+Successfully installed uvloop-0.16.0

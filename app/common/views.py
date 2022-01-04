@@ -35,6 +35,9 @@ class UsersView(ModelView):
         'created': lambda v, c, m, p: m.created.strftime("%Y/%m/%d %H:%M:%S"),
         'eth_balance': lambda v, c, m, p: amount_formatter(m.eth_balance),
         'usdt_balance': lambda v, c, m, p: amount_formatter(m.usdt_balance),
+        # 'eth_balance_fee':lambda v, c, m, p: amount_formatter(m.eth_balance_fee),
+        # 'usdt_balance_fee': lambda v, c, m, p: amount_formatter(m.usdt_balance_fee),
+
     }
 
 

@@ -1,6 +1,8 @@
 #!/bin/bash
 eval `ssh-agent -s`
 ssh-add ~/.ssh/stixex.pem
+git pull
+git checkout develop
 . venv/bin/activate
 pip install -r requirements.txt
 sudo supervisorctl stop all

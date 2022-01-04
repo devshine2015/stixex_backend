@@ -58,6 +58,8 @@ class User(BaseApiModel):
     network_id: int
     eth_balance: int
     usdt_balance: int
+    eth_balance_fee:int
+    usdt_balance_fee:int
     created: datetime
     eth_bets_count: int
     usdt_bets_count: int
@@ -70,6 +72,8 @@ class User(BaseApiModel):
     win_loss_ratio: Optional[str]
     deposits_withdraws: Optional[str]
     not_for_user: bool = False
+    referral_point:int
+   
 
 
 class UserEdit(BaseApiModel):

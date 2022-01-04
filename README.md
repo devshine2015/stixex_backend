@@ -1,3 +1,10 @@
+top text should be "Enter referral code to access the platform"
+
+Text bellow referral number field should be : "Don't have referral code ? No problem, click here to learn how to obtain one, or join us on Telegram to get more info."
+
+Telegram button should be the same color as "join" button, and the text should be "Join us on Telegram"
+
+
 # Sitxex backend project
 
 ### Deployment
@@ -71,51 +78,51 @@ server {
 
 ```
 [program:stixex_api]
-environment=PYTHONPATH=/home/ubuntu/stixex_backend
-command=/home/ubuntu/stixex_backend/venv/bin/uvicorn app.api:app --port=8000
-directory=/home/ubuntu/stixex_backend/app
-user=ubuntu
+environment=PYTHONPATH=/home/wstar/Downloads/done/stixex_backend
+command=/home/wstar/Downloads/done/stixex_backend/venv/bin/uvicorn app.api:app --port=8000
+directory=/home/wstar/Downloads/done/stixex_backend/app
+user=wstar
 autostart=false
 autorestart=true
 
 redirect_stderr=true
-stdout_logfile=/home/ubuntu/stixex_backend/logs/api.log
+stdout_logfile=/home/wstar/Downloads/done/stixex_backend/logs/api.log
 stdout_logfile_backups=5
 
 [program:stixex_admin]
-environment=PYTHONPATH=/home/ubuntu/stixex_backend
-command=/home/ubuntu/stixex_backend/venv/bin/python admin.py
-directory=/home/ubuntu/stixex_backend/app
-user=ubuntu
+environment=PYTHONPATH=/home/wstar/Downloads/done/stixex_backend
+command=/home/wstar/Downloads/done/stixex_backend/venv/bin/python admin.py
+directory=/home/wstar/Downloads/done/stixex_backend/app
+user=wstar
 autostart=false
 autorestart=true
 
 redirect_stderr=true
-stdout_logfile=/home/ubuntu/stixex_backend/logs/admin.log
+stdout_logfile=/home/wstar/Downloads/done/stixex_backend/logs/admin.log
 stdout_logfile_backups=5
 
 [program:stixex_bet_checker]
-environment=PYTHONPATH=/home/ubuntu/stixex_backend
-command=/home/ubuntu/stixex_backend/venv/bin/python bet_checker.py
-directory=/home/ubuntu/stixex_backend/app
-user=ubuntu
+environment=PYTHONPATH=/home/wstar/Downloads/done/stixex_backend
+command=/home/wstar/Downloads/done/stixex_backend/venv/bin/python bet_checker.py
+directory=/home/wstar/Downloads/done/stixex_backend/app
+user=wstar
 autostart=false
 autorestart=true
 
 redirect_stderr=true
-stdout_logfile=/home/ubuntu/stixex_backend/logs/bet_checker.log
+stdout_logfile=/home/wstar/Downloads/done/stixex_backend/logs/bet_checker.log
 stdout_logfile_backups=5
 
 [program:stixex_listener]
-environment=PYTHONPATH=/home/ubuntu/stixex_backend
-command=/home/ubuntu/stixex_backend/venv/bin/python listener.py 4
-directory=/home/ubuntu/stixex_backend/app
-user=ubuntu
+environment=PYTHONPATH=/home/wstar/Downloads/done/stixex_backend
+command=/home/wstar/Downloads/done/stixex_backend/venv/bin/python listener.py 4
+directory=/home/wstar/Downloads/done/stixex_backend/app
+user=wstar
 autostart=false
 autorestart=true
 
 redirect_stderr=true
-stdout_logfile=/home/ubuntu/stixex_backend/logs/listener.log
+stdout_logfile=/home/wstar/Downloads/done/stixex_backend/logs/listener.log
 stdout_logfile_backups=5
 ```
 

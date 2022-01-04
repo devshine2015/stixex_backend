@@ -33,6 +33,7 @@ class SignedRequestOperations:
         if not signature:
             raise HTTPException(HTTPStatus.UNAUTHORIZED, cls.get_signature_creation_url(request))
         signer = cls.get_signer(signature, request)
+        print(signer, "signer")
         user = DbUser.where(address=signer, network_id=request.query_params['network_id']).first()
         return user
 
