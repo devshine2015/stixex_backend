@@ -1,0 +1,193 @@
+{% extends 'admin/master.html' %}
+{% block body %}
+    {{ super() }}
+
+    <!-- Content Header (Page header) -->
+
+    <section class="content">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+            <div class="col-md-2">
+                <a href="?network_id=1"><h4>Network 1</h4></a>
+            </div>
+            <div class="col-md-2">
+                <a href="?network_id=2"><h4>Network 2</h4></a>
+            </div>
+            <div class="col-md-2">
+                <a href="?network_id=3"><h4>Network 3</h4></a>
+            </div>
+            <div class="col-md-2">
+                <a href="?network_id=4"><h4>Network 4</h4></a>
+            </div>
+            <div class="col-md-2">
+                <a href="?network_id=5"><h4>Network 5</h4></a>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Total trades:
+                    <b>{{ db_models.DbBet.query.filter(db_models.DbBet.network_id==request.args.get('network_id',1)).count() }}</b>
+                </h3>
+                <h3>Total trades ETH:
+                    <b>{{ db_models.DbBet.query.filter(db_models.DbBet.network_id==request.args.get('network_id',1),db_models.DbBet.currency==Currency.ETH).count() }}</b>
+                </h3>
+                <h3>Total trades USDT:
+                    <b>{{ db_models.DbBet.query.filter(db_models.DbBet.network_id==request.args.get('network_id',1),db_models.DbBet.currency==Currency.USDT).count() }}</b>
+                </h3>
+                <h3>WIN trades::
+                    <b>{{ db_models.DbBet.query.filter(db_models.DbBet.network_id==request.args.get('network_id',1),db_models.DbBet.result==BetResult.WIN).count() }}</b>
+                </h3>
+                <h3>LOSS trades:
+                    <b>{{ db_models.DbBet.query.filter(db_models.DbBet.network_id==request.args.get('network_id',1),db_models.DbBet.result==BetResult.LOSS).count() }}</b>
+                </h3>
+                <h3>Bet size ETH AVG:
+                    <b>
+                        {{ amount_formatter(db_models.DbBet.query.with_entities(func.sum(db_models.DbBet.amount)).filter(db_models.DbBet.network_id==request.args.get('network_id',1),db_models.DbBet.currency==Currency.ETH).scalar() or 0//(db_models.DbBet.where(currency=Currency.ETH).count() or 1)) }}</b>
+                </h3>
+                <h3>Bet size USDT AVG:
+                    <b>
+                        {{ amount_formatter(db_models.DbBet.query.with_entities(func.sum(db_models.DbBet.amount)).filter(db_models.DbBet.network_id==request.args.get('network_id',1),db_models.DbBet.currency==Currency.USDT).scalar() or 0//(db_models.DbBet.where(currency=Currency.USDT).count() or 1)) }}</b>
+                </h3>
+                <h3>ETH balance:
+                    <b>{{ eth_balance }}</b>
+                </h3>
+                <h3>USDT balance:
+                    <b>{{ usdt_balance }}</b>
+                </h3>
+                <h3>ETH Admin Withdraw
+                </h3>
+                <input type="number" id="eth_withdraw_value">
+                <input type="submit" class="btn btn-success" value="Withdraw" onclick="withdraw_admin_eth()">
+                <h3>USDT Admin Withdraw:
+                </h3>
+                <input type="number" id="usdt_withdraw_value">
+                <input type="submit" class="btn btn-success" value="Withdraw" onclick="withdraw_admin_usdt()">
+
+                <script src="/static/request_signing.js"></script>
+                <script>
+                    let eth_contract = web3.eth.contract({{ eth_abi |safe}}).at("{{ eth_address |safe}}");
+                    let usdt_contract = web3.eth.contract({{ usdt_abi |safe}}).at("{{ usdt_address |safe}}");
+                    let erc20_contract = web3.eth.contract({{ erc20_abi |safe}}).at("{{ erc20_address |safe}}");
+
+                    function withdraw_admin_eth() {
+                        let value = ($("#eth_withdraw_value")[0].value * Math.pow(10, 18)).toFixed();
+                        eth_contract.withdrawAdmin(value, function (error, result) {
+                            console.log(result);
+                            $("#eth_withdraw_value")[0].value = '';
+                        })
+                    }
+
+                    function withdraw_admin_usdt() {
+                        let value = ($("#usdt_withdraw_value")[0].value * Math.pow(10, 6)).toFixed();
+                        usdt_contract.withdrawAdmin(value, function (error, result) {
+                            console.log(result);
+                            $("#usdt_withdraw_value")[0].value = '';
+                        })
+                    }
+                </script>
+            </div>
+            <!-- ./col -->
+            <div class="col-md-6">
+                <h3>Fees earned ETH:
+                    <b>{{ amount_formatter(db_models.DbBet.query.with_entities(func.sum(db_models.DbBet.fee_amount)).filter(db_models.DbBet.network_id==request.args.get('network_id',1),db_models.DbBet.currency==Currency.ETH).scalar()) }}</b>
+                </h3>
+                <h3>Fees earned USDT:
+                    <b>{{ amount_formatter(db_models.DbBet.query.with_entities(func.sum(db_models.DbBet.fee_amount)).filter(db_models.DbBet.network_id==request.args.get('network_id',1),db_models.DbBet.currency==Currency.USDT).scalar()) }}</b>
+                </h3>
+                <h3>Fees earned ETH AVG:
+                    <b>
+                        {{ amount_formatter(db_models.DbBet.query.with_entities(func.sum(db_models.DbBet.fee_amount)).filter(db_models.DbBet.network_id==request.args.get('network_id',1),db_models.DbBet.currency==Currency.ETH).scalar() or 0//(db_models.DbBet.where(currency=Currency.ETH).count() or 1)) }}</b>
+                </h3>
+                <h3>Fees earned USDT AVG:
+                    <b>{{ amount_formatter(db_models.DbBet.query.with_entities(func.sum(db_models.DbBet.fee_amount)).filter(db_models.DbBet.network_id==request.args.get('network_id',1),db_models.DbBet.currency==Currency.USDT).scalar() or 0//(db_models.DbBet.where(currency=Currency.USDT).count() or 1)) }}</b>
+                </h3>
+                <h3>
+                    Total deposits ETH:
+                    <b>{{ amount_formatter(db_models.DbChainEvent.query
+                    .with_entities(func.sum(db_models.DbChainEvent.amount))
+                    .filter(db_models.DbChainEvent.network_id==request.args.get('network_id',1),db_models.DbChainEvent.name=='Deposited',
+                    db_models.DbChainEvent.currency==Currency.ETH).scalar()) }}</b>
+                </h3>
+                <h3>
+                    Total deposits USDT:
+                    <b>{{ amount_formatter(db_models.DbChainEvent.query
+                    .with_entities(func.sum(db_models.DbChainEvent.amount))
+                    .filter(db_models.DbChainEvent.network_id==request.args.get('network_id',1),db_models.DbChainEvent.name=='Deposited',
+                    db_models.DbChainEvent.currency==Currency.USDT).scalar()) or 0 * 10**12 }}</b>
+                </h3>
+                <h3>
+                    Total withdraws ETH:
+                    <b>{{ amount_formatter(db_models.DbChainEvent.query
+                    .with_entities(func.sum(db_models.DbChainEvent.amount))
+                    .filter(db_models.DbChainEvent.network_id==request.args.get('network_id',1),db_models.DbChainEvent.name=='Withdraw',
+                    db_models.DbChainEvent.currency==Currency.ETH).scalar()) }}</b>
+                </h3>
+                <h3>
+                    Total withdraws USDT:
+                    <b>{{ amount_formatter(db_models.DbChainEvent.query
+                    .with_entities(func.sum(db_models.DbChainEvent.amount))
+                    .filter(db_models.DbChainEvent.network_id==request.args.get('network_id',1),db_models.DbChainEvent.name=='Withdraw',
+                    db_models.DbChainEvent.currency==Currency.USDT).scalar()) or 0 * 10**12 }}</b>
+                </h3>
+                <h3>ETH Admin Deposit
+                </h3>
+                <input type="number" id="eth_deposit_value">
+                <input type="submit" class="btn btn-success" value="Deposit" onclick="deposit_admin_eth()">
+                <h3>USDT Admin Deposit:
+                </h3>
+                <input type="number" id="usdt_deposit_value">
+                <input type="submit" class="btn btn-success" value="Deposit" onclick="deposit_admin_usdt()">
+                <script>
+
+                    function deposit_admin_eth() {
+                        let value = ($("#eth_deposit_value")[0].value * Math.pow(10, 18)).toFixed();
+                        eth_contract.depositAdmin({value: value}, function (error, result) {
+                            console.log(result);
+                            $("#eth_deposit_value")[0].value = '';
+                        })
+                    }
+
+                    function deposit_admin_usdt() {
+                        let value = ($("#usdt_deposit_value")[0].value * Math.pow(10, 6)).toFixed();
+                        erc20_contract.allowance(web3.eth.accounts[0], "{{ usdt_address }}", function (err, res) {
+                            if (web3.toDecimal(res) !== 0) {
+                                console.log('allownance', web3.toDecimal(res))
+                                erc20_contract.approve("{{ usdt_address }}", 0,
+                                    function (error, result) {
+                                        erc20_contract.approve("{{ usdt_address }}", value,
+                                            function (error, result) {
+                                                console.log(error, result);
+                                                usdt_contract.depositAdmin(value, function (error, result) {
+                                                    console.log(result);
+                                                    $("#usdt_deposit_value")[0].value = '';
+                                                })
+                                            })
+                                    })
+                            } else {
+                                console.log('all ok', web3.toDecimal(res), web3.toDecimal(res) === 0)
+                                erc20_contract.approve("{{ usdt_address }}", value,
+                                    function (error, result) {
+                                        console.log(error, result);
+                                        usdt_contract.depositAdmin(value, function (error, result) {
+                                            console.log(result);
+                                            $("#usdt_deposit_value")[0].value = '';
+                                        })
+                                    })
+                            }
+                        })
+
+
+                    }
+                </script>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- Main row -->
+
+    </section>
+    <!-- /.content -->
+
+
+{% endblock body %}

@@ -1,0 +1,1307 @@
+INFO:     Started server process [1378702]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+2021-06-03 18:23:13.344 | DEBUG    | app.api:join_room:43 - Room 22a5be75d7854174b16aef970c360448 leaved
+2021-06-03 18:23:13.346 | DEBUG    | app.api:join_room:45 - joined 22a5be75d7854174b16aef970c360448 0x29e3a251aBE8797B168931fD84c97dCA4724fa4C-3
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+2021-06-03 18:23:14.726 | DEBUG    | app.api:join_room:43 - Room 6868736298254928a378fd3819bf7f2d leaved
+2021-06-03 18:23:14.727 | DEBUG    | app.api:join_room:45 - joined 6868736298254928a378fd3819bf7f2d 0x4C175513ae5BC3892853600A090325e1f4070803-3
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+2021-06-03 18:23:15.252 | DEBUG    | app.api:join_room:43 - Room 21f40aa7818c46879a8f8f2cce8e8148 leaved
+2021-06-03 18:23:15.253 | DEBUG    | app.api:join_room:45 - joined 21f40aa7818c46879a8f8f2cce8e8148 0xf5c5b9b0D1bc1A9E347A10c57b3BcB61b11c22e9-3
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+2021-06-03 18:23:15.628 | DEBUG    | app.api:join_room:43 - Room 15831dfa56854306ab8c73ea59ccfa67 leaved
+2021-06-03 18:23:15.632 | DEBUG    | app.api:join_room:45 - joined 15831dfa56854306ab8c73ea59ccfa67 admins-room
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+2021-06-03 18:23:15.985 | DEBUG    | app.api:join_room:43 - Room e46b02ced1fc4b48b54784d17015817e leaved
+2021-06-03 18:23:15.986 | DEBUG    | app.api:join_room:45 - joined e46b02ced1fc4b48b54784d17015817e 0xf5c5b9b0D1bc1A9E347A10c57b3BcB61b11c22e9-3
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+2021-06-03 18:23:16.371 | DEBUG    | app.api:join_room:43 - Room b5078cbac7104b1bb1645e0e65d655e9 leaved
+2021-06-03 18:23:16.371 | DEBUG    | app.api:join_room:45 - joined b5078cbac7104b1bb1645e0e65d655e9 0xf5c5b9b0D1bc1A9E347A10c57b3BcB61b11c22e9-3
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+2021-06-03 18:23:18.398 | DEBUG    | app.api:join_room:43 - Room 83338b50ffc94c3692d2c422ac341ef7 leaved
+2021-06-03 18:23:18.399 | DEBUG    | app.api:join_room:45 - joined 83338b50ffc94c3692d2c422ac341ef7 null-null
+connect  22a5be75d7854174b16aef970c360448
+connect  6868736298254928a378fd3819bf7f2d
+connect  21f40aa7818c46879a8f8f2cce8e8148
+connect  15831dfa56854306ab8c73ea59ccfa67
+connect  e46b02ced1fc4b48b54784d17015817e
+connect  b5078cbac7104b1bb1645e0e65d655e9
+connect  83338b50ffc94c3692d2c422ac341ef7
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+2021-06-03 18:25:57.324 | DEBUG    | app.api:join_room:43 - Room null-null leaved
+2021-06-03 18:25:57.329 | DEBUG    | app.api:join_room:45 - joined 83338b50ffc94c3692d2c422ac341ef7 null-null
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+2021-06-03 18:26:17.484 | DEBUG    | app.common.dependencies:get_signer:25 - 10000000000000000|ETHUSDT|RED|ETH|3|5
+2021-06-03 18:26:17.933 | DEBUG    | app.common.db_models:emit:55 - USER_STATE_CHANGED emited
+2021-06-03 18:26:17.943 | DEBUG    | app.common.db_models:emit:55 - BET_CREATED emited
+<DbBet #19472>
+INFO:     188.43.235.177:0 - "POST /create_bet?amount=10000000000000000&asset=ETHUSDT&choice=RED&currency=ETH&time_frame=5&network_id=3 HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     88.118.99.231:0 - "GET /win_loss/3 HTTP/1.0" 401 Unauthorized
+INFO:     188.43.235.177:0 - "OPTIONS /create_bet?amount=10000000000000000&asset=ETHUSDT&choice=RED&currency=ETH&time_frame=1&network_id=3 HTTP/1.0" 200 OK
+2021-06-03 18:26:24.073 | DEBUG    | app.common.dependencies:get_signer:25 - 10000000000000000|ETHUSDT|RED|ETH|3|1
+2021-06-03 18:26:24.432 | DEBUG    | app.common.db_models:emit:55 - USER_STATE_CHANGED emited
+2021-06-03 18:26:24.437 | DEBUG    | app.common.db_models:emit:55 - BET_CREATED emited
+<DbBet #19473>
+INFO:     188.43.235.177:0 - "POST /create_bet?amount=10000000000000000&asset=ETHUSDT&choice=RED&currency=ETH&time_frame=1&network_id=3 HTTP/1.0" 200 OK
+INFO:     88.118.99.231:0 - "GET /win_loss/3 HTTP/1.0" 401 Unauthorized
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+2021-06-03 18:27:11.760 | DEBUG    | app.common.dependencies:get_signer:25 - 10000000000000000|ETHUSDT|RED|ETH|3|5
+2021-06-03 18:27:12.159 | DEBUG    | app.common.db_models:emit:55 - USER_STATE_CHANGED emited
+2021-06-03 18:27:12.161 | DEBUG    | app.common.db_models:emit:55 - BET_CREATED emited
+<DbBet #19474>
+INFO:     188.43.235.177:0 - "POST /create_bet?amount=10000000000000000&asset=ETHUSDT&choice=RED&currency=ETH&time_frame=5&network_id=3 HTTP/1.0" 200 OK
+INFO:     88.118.99.231:0 - "GET /win_loss/3 HTTP/1.0" 401 Unauthorized
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     88.118.99.231:0 - "GET /win_loss/3 HTTP/1.0" 401 Unauthorized
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+disconnect  21f40aa7818c46879a8f8f2cce8e8148
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+disconnect  e46b02ced1fc4b48b54784d17015817e
+disconnect  b5078cbac7104b1bb1645e0e65d655e9
+disconnect  15831dfa56854306ab8c73ea59ccfa67
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "OPTIONS /create_bet?amount=10000000000000000&asset=ETHUSDT&choice=RED&currency=ETH&time_frame=5&network_id=3 HTTP/1.0" 200 OK
+2021-06-03 18:38:54.820 | DEBUG    | app.common.dependencies:get_signer:25 - 10000000000000000|ETHUSDT|RED|ETH|3|5
+2021-06-03 18:38:55.220 | DEBUG    | app.common.db_models:emit:55 - USER_STATE_CHANGED emited
+2021-06-03 18:38:55.223 | DEBUG    | app.common.db_models:emit:55 - BET_CREATED emited
+<DbBet #19475>
+INFO:     188.43.235.177:0 - "POST /create_bet?amount=10000000000000000&asset=ETHUSDT&choice=RED&currency=ETH&time_frame=5&network_id=3 HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+disconnect  6868736298254928a378fd3819bf7f2d
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+connect  59667a7ff6944b83ba5bec7567a78092
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+2021-06-03 18:55:24.648 | DEBUG    | app.api:join_room:43 - Room 59667a7ff6944b83ba5bec7567a78092 leaved
+2021-06-03 18:55:24.653 | DEBUG    | app.api:join_room:45 - joined 59667a7ff6944b83ba5bec7567a78092 0x4C175513ae5BC3892853600A090325e1f4070803-3
+INFO:     188.43.235.177:0 - "GET /server_params HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /user_information?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803 HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+disconnect  59667a7ff6944b83ba5bec7567a78092
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+connect  2cf81cfa196d46be805bed38ea07ec3e
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_params HTTP/1.0" 200 OK
+2021-06-03 19:05:56.989 | DEBUG    | app.api:join_room:43 - Room 2cf81cfa196d46be805bed38ea07ec3e leaved
+2021-06-03 19:05:56.990 | DEBUG    | app.api:join_room:45 - joined 2cf81cfa196d46be805bed38ea07ec3e 0x4C175513ae5BC3892853600A090325e1f4070803-3
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /user_information?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803 HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+disconnect  2cf81cfa196d46be805bed38ea07ec3e
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+connect  79890b65c70040a4a56dccae7c4b76af
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+2021-06-03 19:09:39.567 | DEBUG    | app.api:join_room:43 - Room 79890b65c70040a4a56dccae7c4b76af leaved
+2021-06-03 19:09:39.568 | DEBUG    | app.api:join_room:45 - joined 79890b65c70040a4a56dccae7c4b76af 0x4C175513ae5BC3892853600A090325e1f4070803-3
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+disconnect  79890b65c70040a4a56dccae7c4b76af
+connect  5d2902f88cc642778c7391cf36d60d33
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+2021-06-03 19:10:03.695 | DEBUG    | app.api:join_room:43 - Room 5d2902f88cc642778c7391cf36d60d33 leaved
+2021-06-03 19:10:03.700 | DEBUG    | app.api:join_room:45 - joined 5d2902f88cc642778c7391cf36d60d33 0x4C175513ae5BC3892853600A090325e1f4070803-3
+INFO:     188.43.235.177:0 - "GET /server_params HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /user_information?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803 HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+disconnect  5d2902f88cc642778c7391cf36d60d33
+connect  ff4b855024f94ba8b3511632d7669794
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+2021-06-03 19:11:07.683 | DEBUG    | app.api:join_room:43 - Room ff4b855024f94ba8b3511632d7669794 leaved
+2021-06-03 19:11:07.683 | DEBUG    | app.api:join_room:45 - joined ff4b855024f94ba8b3511632d7669794 0x4C175513ae5BC3892853600A090325e1f4070803-3
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_params HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+disconnect  ff4b855024f94ba8b3511632d7669794
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+connect  92bc8992505b4e818c45cf618ed8415e
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_params HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+2021-06-03 19:12:39.103 | DEBUG    | app.api:join_room:43 - Room 92bc8992505b4e818c45cf618ed8415e leaved
+2021-06-03 19:12:39.105 | DEBUG    | app.api:join_room:45 - joined 92bc8992505b4e818c45cf618ed8415e 0x4C175513ae5BC3892853600A090325e1f4070803-3
+INFO:     188.43.235.177:0 - "GET /user_information?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803 HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+disconnect  92bc8992505b4e818c45cf618ed8415e
+connect  c71b3bbc7d4e4d94a686c0e551c89342
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_params HTTP/1.0" 200 OK
+2021-06-03 19:14:39.261 | DEBUG    | app.api:join_room:43 - Room c71b3bbc7d4e4d94a686c0e551c89342 leaved
+2021-06-03 19:14:39.262 | DEBUG    | app.api:join_room:45 - joined c71b3bbc7d4e4d94a686c0e551c89342 0x4C175513ae5BC3892853600A090325e1f4070803-3
+INFO:     188.43.235.177:0 - "GET /user_information?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803 HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+disconnect  c71b3bbc7d4e4d94a686c0e551c89342
+connect  b72c28f34bb44281a9de1a548abf7107
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+2021-06-03 19:15:23.723 | DEBUG    | app.api:join_room:43 - Room b72c28f34bb44281a9de1a548abf7107 leaved
+2021-06-03 19:15:23.728 | DEBUG    | app.api:join_room:45 - joined b72c28f34bb44281a9de1a548abf7107 0x4C175513ae5BC3892853600A090325e1f4070803-3
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_params HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /user_information?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803 HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x4C175513ae5BC3892853600A090325e1f4070803&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+connect  9dd13fdcfac4428cb302351fcf7421ff
+INFO:     188.43.136.32:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.136.32:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.136.32:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+disconnect  83338b50ffc94c3692d2c422ac341ef7
+disconnect  9dd13fdcfac4428cb302351fcf7421ff
+disconnect  b72c28f34bb44281a9de1a548abf7107
+disconnect  22a5be75d7854174b16aef970c360448
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+2021-06-03 19:21:10.409 | DEBUG    | app.api:join_room:43 - Room 327312a375d44b0f9501990884390aba leaved
+2021-06-03 19:21:10.410 | DEBUG    | app.api:join_room:45 - joined 327312a375d44b0f9501990884390aba null-null
+2021-06-03 19:21:10.414 | DEBUG    | app.api:join_room:43 - Room eec087f7a8bc42cfb72e5f18fc3921f5 leaved
+2021-06-03 19:21:10.415 | DEBUG    | app.api:join_room:45 - joined eec087f7a8bc42cfb72e5f18fc3921f5 0x29e3a251aBE8797B168931fD84c97dCA4724fa4C-3
+2021-06-03 19:21:10.668 | DEBUG    | app.api:join_room:43 - Room dd1a99d30ae2416ebfd8bcc5a0a88fc5 leaved
+2021-06-03 19:21:10.668 | DEBUG    | app.api:join_room:45 - joined dd1a99d30ae2416ebfd8bcc5a0a88fc5 0x4C175513ae5BC3892853600A090325e1f4070803-3
+connect  327312a375d44b0f9501990884390aba
+connect  dd1a99d30ae2416ebfd8bcc5a0a88fc5
+connect  eec087f7a8bc42cfb72e5f18fc3921f5
+connect  7b9e9277e6c24d3ab3314688009c70dd
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+disconnect  eec087f7a8bc42cfb72e5f18fc3921f5
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_params HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+2021-06-03 19:21:35.196 | DEBUG    | app.api:join_room:43 - Room 0b8e3c03b06c4e79a3a9f94739649308 leaved
+2021-06-03 19:21:35.197 | DEBUG    | app.api:join_room:45 - joined 0b8e3c03b06c4e79a3a9f94739649308 0x29e3a251aBE8797B168931fD84c97dCA4724fa4C-3
+connect  0b8e3c03b06c4e79a3a9f94739649308
+INFO:     188.43.235.177:0 - "GET /user_information?network_id=3&user_address=0x29e3a251aBE8797B168931fD84c97dCA4724fa4C HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x29e3a251aBE8797B168931fD84c97dCA4724fa4C&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "OPTIONS /create_bet?amount=10000000000000000&asset=ETHUSDT&choice=RED&currency=ETH&time_frame=1&network_id=3 HTTP/1.0" 200 OK
+2021-06-03 19:22:38.959 | DEBUG    | app.common.dependencies:get_signer:25 - 10000000000000000|ETHUSDT|RED|ETH|3|1
+2021-06-03 19:22:39.319 | DEBUG    | app.common.db_models:emit:55 - USER_STATE_CHANGED emited
+2021-06-03 19:22:39.325 | DEBUG    | app.common.db_models:emit:55 - BET_CREATED emited
+<DbBet #19476>
+INFO:     188.43.235.177:0 - "POST /create_bet?amount=10000000000000000&asset=ETHUSDT&choice=RED&currency=ETH&time_frame=1&network_id=3 HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x29e3a251aBE8797B168931fD84c97dCA4724fa4C&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.136.32:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x29e3a251aBE8797B168931fD84c97dCA4724fa4C&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x29e3a251aBE8797B168931fD84c97dCA4724fa4C&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.136.32:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.136.32:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.136.32:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.136.32:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.136.32:0 - "GET /server_time HTTP/1.0" 200 OK
+disconnect  7b9e9277e6c24d3ab3314688009c70dd
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+connect  4632d4b1d25746c9885c615dca15cbec
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_params HTTP/1.0" 200 OK
+2021-06-03 19:41:52.935 | DEBUG    | app.api:join_room:43 - Room 4632d4b1d25746c9885c615dca15cbec leaved
+2021-06-03 19:41:52.936 | DEBUG    | app.api:join_room:45 - joined 4632d4b1d25746c9885c615dca15cbec 0x29e3a251aBE8797B168931fD84c97dCA4724fa4C-3
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /user_information?network_id=3&user_address=0x29e3a251aBE8797B168931fD84c97dCA4724fa4C HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /bets_history?network_id=3&user_address=0x29e3a251aBE8797B168931fD84c97dCA4724fa4C&limit=10&offset=0&currency=ETH HTTP/1.0" 200 OK
+disconnect  4632d4b1d25746c9885c615dca15cbec
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     ('127.0.0.1', 0) - "WebSocket /sio/socket.io/" [accepted]
+connect  3e019edc0b5e4836b1f72f194d0bcb09
+disconnect  3e019edc0b5e4836b1f72f194d0bcb09
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     142.93.188.65:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     188.43.235.177:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /server_time HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     187.110.233.38:0 - "GET /all_prices HTTP/1.0" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1378702]
+disconnect  327312a375d44b0f9501990884390aba
+disconnect  dd1a99d30ae2416ebfd8bcc5a0a88fc5
+disconnect  0b8e3c03b06c4e79a3a9f94739649308

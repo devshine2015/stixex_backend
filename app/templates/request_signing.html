@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="/static/signature.js"></script>
+</head>
+<body>
+<h4 style="text-align: center; margin-top: 100px" id="message">{{ '|'.join(withdraw.signing_args) }}</h4>
+<h3 style="text-align: center" id="signature"></h3>
+<form id="form" method="post" action="/approve" style="display: none">
+    <input type="text" name="id" value="{{ withdraw.id }}">
+    <input type="signature" name="signature" value="" id="form_signature">
+</form>
+<script>
+    setInterval(function () {
+        let s = document.getElementById('signature').innerText
+        if (s !== 'Undefined' && s !== '') {
+            document.getElementById('form_signature').value = document.getElementById('signature').innerText;
+            document.getElementById('form').submit();
+        }
+    }, 500);
+
+</script>
+</body>
+</html>
